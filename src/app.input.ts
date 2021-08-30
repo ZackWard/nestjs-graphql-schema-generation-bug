@@ -4,8 +4,8 @@ import { Field, InputType, IntersectionType } from '@nestjs/graphql';
 export class FooInput {
 
     // Uncomment line 7 and comment line 8 to demonstrate the unhandled exception
-    @Field(() => [String], { nullable: 'items' })
-    // @Field(() => [String])
+    // @Field(() => [String], { nullable: 'items' })
+    @Field(() => [String])
     foo: string[];
 }
 
